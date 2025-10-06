@@ -4,7 +4,7 @@ This repository is a **minimal, single-file example** demonstrating core ideas f
 
 ---
 
-## 🚀 What this project demonstrates (short)
+## What this project demonstrates (short)
 
 - **Codebase** — single Git repository.
 - **Dependencies** — listed in `requirements.txt`.
@@ -15,7 +15,7 @@ This repository is a **minimal, single-file example** demonstrating core ideas f
 
 ---
 
-## 🗂 Project structure
+## Project structure
 
 ```
 12-factor-demo/
@@ -57,7 +57,7 @@ Flask
 
 ---
 
-## ⚙️ Setup & Run
+## Setup & Run
 
 1. **Clone (or create) the project folder**
 
@@ -95,7 +95,7 @@ Open your browser at `http://127.0.0.1:8000` to see the app response.
 
 ---
 
-## 🔁 Change configuration (no code edits)
+## Change configuration (no code edits)
 
 Change ports or other configuration using environment variables. Example (macOS / Linux):
 
@@ -115,25 +115,13 @@ This demonstrates the *Config* factor — changing runtime behavior without chan
 
 ---
 
-## 🧠 How these lines map to 12 factors (brief)
+## How these lines map to 12 factors (brief)
 
 - **Codebase** — this entire app is tracked in one repo.
 - **Dependencies** — managed by `requirements.txt` and `pip`.
 - **Config** — `PORT` is read from the environment.
 - **Port binding** — Flask exposes an HTTP service via `app.run(host='0.0.0.0', port=...)`.
 - **Logs** — `print()` outputs to stdout (terminal).
-- **Admin processes** — you can add scripts like `migrate.py` and run them separately.
-
----
-
-## 🔧 Next steps (optional)
-
-If you want to extend this demo later:
-
-- Add a `migrate.py` file for DB setup (Admin process).
-- Add a small SQLite or PostgreSQL backing service and use `DATABASE_URL` env variable.
-- Create a `Dockerfile` to demonstrate build/release/run.
-- Deploy to a free host (Render, Railway, or Heroku) to show real dev/prod parity.
 
 ---
 
